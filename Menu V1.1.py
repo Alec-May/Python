@@ -1,11 +1,15 @@
-# Opens Youtube
-def Youtube():
+import os
+import time
+#Must Access this to continue.
+def Saved_Code():
     import webbrowser
-    webbrowser.open("https://www.youtube.com/")
+    webbrowser.open("YourUrlgoeshere")
     import urllib.request
-    get_url = urllib.request.urlopen('https://www.youtube.com/')
+    get_url = urllib.request.urlopen('YourUrlGoesHere')
     print("Response Status:"+ str(get_url.getcode()))
-# Time Conversion challenge 
+def date_time():
+    import time
+    print(f"Todays date is {time.ctime()} ")
 def time_conversion():
     years = int(input("Please enter years: ")) * 365 * 24 * 60 * 60
     days = int(input("Please enter days: ")) * 3600 * 24
@@ -16,31 +20,34 @@ def time_conversion():
     time = years + days + hours + minutes + seconds 
 
     print("The Total seconds:", time)
-# Brings up my saved code document 
-def Saved_Code():
-    import webbrowser
-    webbrowser.open("REDACTED")
-    import urllib.request
-    get_url = urllib.request.urlopen('REDACTED')
-    print("Response Status:"+ str(get_url.getcode()))
-# Placeholder
-def placeholder():
-    print("Placeholder")
-# Date and time challenge 
-def date_time():
-    import time
-    print(f"Todays date is {time.ctime()} ")
-# Code for menu 2
-def menu2():
-     print("Page 2, \n 5. Launch Google Classroom \n 6. Time Conversion \n 7. Previous Page")
-# Opens google classroom
 def google_classroom():
     import webbrowser
-    webbrowser.open("REDACTED")
+    webbrowser.open("YourUrlGoesHere")
     import urllib.request
-    get_url = urllib.request.urlopen('REDACTED')
+    get_url = urllib.request.urlopen('YourUrlGoesHere')
     print("Response Status:"+ str(get_url.getcode()))
-# Code for original menu    
+def Youtube():
+    import webbrowser
+    webbrowser.open("https://www.youtube.com/")
+    import urllib.request
+    get_url = urllib.request.urlopen('https://www.youtube.com/')
+    print("Response Status:"+ str(get_url.getcode()))
+def main():
+    while True:
+        UserName = input ("Enter Username: ")
+        PassWord = input ("Enter Password: ")
+
+        if UserName == 'YourUserNameGoesHere' and PassWord == 'YourPasswordGoesHere':
+            time.sleep(1)
+            print ("Login successful!")
+            logged()
+
+        else:
+            print ("Password did not match!")
+def menu2():
+     print("Page 2, \n 5. Launch Google Classroom \n 6. Time Conversion \n 7. Previous Page")
+def logged():
+    menu()
 def menu():
     print("Welcome, \n 1. Youtube \n 2. Todays Date \n 3. More Code \n 4. Saved code \n 5.Exit")
     option = input("Enter your choice: ")
@@ -73,7 +80,8 @@ def menu():
 
     if option == "5":
         print ("You have exited.")
-        exit() 
+        exit()
+        
     # The try and execpt code     
     try:
         option = int(input)
@@ -82,6 +90,12 @@ def menu():
         print("Wrong input")
         menu()
 
-# Calls the function 
-menu()
 
+
+
+
+
+
+
+
+main()
