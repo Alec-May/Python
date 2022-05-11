@@ -90,12 +90,4 @@ def menu():
         print("Wrong input")
         menu()
 
-
-
-
-
-
-
-
-
 main()
