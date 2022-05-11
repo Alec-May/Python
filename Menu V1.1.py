@@ -19,9 +19,9 @@ def time_conversion():
 # Brings up my saved code document 
 def Saved_Code():
     import webbrowser
-    webbrowser.open("https://docs.google.com/document/d/1kbdG_mxyPLB-DhCcLRXpHoWBdxUj1O1gDnH0BsludFI/edit")
+    webbrowser.open("REDACTED")
     import urllib.request
-    get_url = urllib.request.urlopen('https://docs.google.com/document/d/1kbdG_mxyPLB-DhCcLRXpHoWBdxUj1O1gDnH0BsludFI/edit')
+    get_url = urllib.request.urlopen('REDACTED')
     print("Response Status:"+ str(get_url.getcode()))
 # Placeholder
 def placeholder():
@@ -36,9 +36,9 @@ def menu2():
 # Opens google classroom
 def google_classroom():
     import webbrowser
-    webbrowser.open("https://classroom.google.com/u/0/h")
+    webbrowser.open("REDACTED")
     import urllib.request
-    get_url = urllib.request.urlopen('https://classroom.google.com/u/0/h')
+    get_url = urllib.request.urlopen('REDACTED')
     print("Response Status:"+ str(get_url.getcode()))
 # Code for original menu    
 def menu():
