@@ -34,8 +34,8 @@ def Youtube():
     print("Response Status:"+ str(get_url.getcode()))
 def main():
     while True:
-        UserName = input ("Enter Username: ")
-        PassWord = input ("Enter Password: ")
+        UserName = input ("Enter Username(Capital does matter): ")
+        PassWord = input ("Enter Password(Capital does matter): ")
 
         if UserName == 'YourUserNameGoesHere' and PassWord == 'YourPasswordGoesHere':
             time.sleep(1)
