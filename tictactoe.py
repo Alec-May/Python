@@ -69,7 +69,7 @@ def single_game(cur_player):
 			print("Wrong Input!!! Try Again")
 			continue
 
-		# Sanity check for MOVE inout
+		# Sanity check for move input
 		if move < 1 or move > 9:
 			print("Wrong Input!!! Try Again")
 			continue
@@ -140,7 +140,7 @@ if __name__ == "__main__":
 		print("Enter 2 for O")
 		print("Enter 3 to Quit")
 
-		# Try exception for CHOICE input
+		# Try exception for choice input
 		try:
 			choice = int(input())	
 		except ValueError:
