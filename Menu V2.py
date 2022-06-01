@@ -3,6 +3,12 @@ import os
 import time
 import random
 # Saved code file function 
+def Add_Number():
+    number1 = input("Enter the first number: ")
+    number2 = input("Enter the last number: ")
+    Sum = int(number1) + int(number2)
+    print(Sum)
+
 def birthdate():
     import datetime
     currentDate = datetime.datetime.now()
@@ -84,7 +90,7 @@ def main():
             print ("Password did not match!")
 # Second menu code
 def menu2():
-     print("Page 2, \n 5. Launch Google Classroom \n 6. Time Conversion \n 7. How Old Am I? \n 8. Previous Page")
+     print("Page 2, \n 5. Launch Google Classroom \n 6. Time Conversion \n 7. How Old Am I? \n 8. Addition \n 9. Previous Page")
 # If password and username are correct
 def logged():
     menu()
@@ -108,10 +114,12 @@ def menu():
         
         elif option == "6":
             time_conversion()
-        elif option == "8":
+        elif option == "9":
             menu()
         elif option == "7":
             birthdate()
+        elif option == "8":
+            Add_Number()
           
            
           
